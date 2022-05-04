@@ -25,18 +25,19 @@ tasks.named('test') {
 pmd {
     ignoreFailures = true
     consoleOutput = true
-    toolVersion = "6.21.0"
+    toolVersion = "6.45.0"
     reportsDir = file("${buildDir}/pmd-output")
     rulesMinimumPriority = 5
     ruleSets = [
-            "category/java/bestpractices.xml",
-            "category/java/errorprone.xml",
-            "category/java/codestyle.xml",
-            "category/java/design.xml",
-            "category/java/documentation.xml",
-            "category/java/multithreading.xml",
-            "category/java/performance.xml",
-            "category/java/security.xml",
+//            "category/java/bestpractices.xml",
+//            "category/java/errorprone.xml",
+"category/java/codestyle.xml",
+//            "category/java/design.xml",
+//            "category/java/documentation.xml",
+//            "category/java/multithreading.xml",
+//            "category/java/performance.xml",
+//            "category/java/security.xml"
     ]
+    excludes = ["AtLeastOneConstructor"]
 }
 

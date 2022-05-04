@@ -21,8 +21,8 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class TestController {
-  @GetMapping("/test/{name}")
-  public String test(@PathVariable String name) {
+  @GetMapping("/greeting/{name}")
+  public String greeting(@PathVariable final String name) {
     return "Hello " + name;
   }
 }
