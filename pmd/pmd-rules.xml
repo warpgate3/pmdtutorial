@@ -7,4 +7,7 @@
   <rule ref="category/java/codestyle.xml">
     <exclude name="AtLeastOneConstructor"/>
   </rule>
+  <rule ref="category/java/bestpractices.xml">
+    <exclude name="AtLeastOneConstructor"/>
+  </rule>
 </ruleset>
